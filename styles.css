@@ -572,6 +572,7 @@ footer__links{
 }
 
 .social__media--wrap{
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
