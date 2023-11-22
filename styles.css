@@ -6,7 +6,7 @@
 }
 
 .navbar{
-    background: #1b1b1b;
+    background: #fff;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -29,8 +29,8 @@
 }
 
 #navbar__logo{
-    background-color: #08ff18;
-    background-image: linear-gradient(to top, #08ff18 0%, #f7ef95 100%);
+    background-color: #368f2b;
+    background-image: linear-gradient(to top, #368f2b 0%, rgb(8, 48, 20) 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -59,7 +59,7 @@
 }
 
 .navbar__links{
-    color: #fff;
+    color: #2b2b2b;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,7 +87,7 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #1dc128;
+    background: #368f2b;
     color: #fff;
 }
 
@@ -97,7 +97,7 @@
 }
 
 .navbar__links:hover{
-    color: #1dc128;
+    color: #368f2b;
     transition: all 0.3s ease;
 }
 
@@ -123,11 +123,11 @@
         transition: all 0.5s ease;
         height: 50vh;
         z-index: -1;
-        background: #1f1f1f;
+        background: #fff;
 
     }
     .navbar__menu.active{
-        background: #1f1f1f;
+        background: #fff;
         top: 100%;
         opacity: 1;
         transition:  all 0.5s ease;
@@ -145,7 +145,7 @@
         height: 3px;
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
-        background: #fff;
+        background: #2b2b2b;
     }
 
     .navbar__item{
@@ -203,7 +203,7 @@
 /* QUIENES SOMOS */
 
 .main{
-    background-color: #1f1f1f;
+    background-color: #fff;
 }
 
 .main__container{
@@ -213,7 +213,7 @@
     justify-self: center;
     margin:  0 auto;
     height: 90vh;
-    background-color: #1f1f1f;
+    background-color: #fff;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -222,8 +222,8 @@
 
 .main__content h1{
     font-size: 4rem;
-    background-color: #08ff18;
-    background-image: linear-gradient(to top, #08ff18 0%, #f7ef95 100%);
+    background-color: #368f2b;
+    background-image: linear-gradient(to top, #368f2b 75%, rgb(8, 48, 20) 100%);
     background-size: 100;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -251,7 +251,7 @@
 
 .main__btn {
     font-size: 1rem;
-    background-image: linear-gradient(to top, #08ff18 0%, #f7ef95 100%);
+    background-image: linear-gradient(to top, #368f2b 25%, #368f2b 100%);
     padding: 14px 32px;
     border: none;
     border-radius: 4px;
@@ -352,22 +352,22 @@
 /* Services CSS */
 
 .services{
-    background: #1f1f1f;
+    background: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 520vh;
+    height: 540vh;
 }
 
 .services h1{
-    background-color: #1dc128;
+    background-color: #368f2b;
     background-image: linear-gradient(to right, 
-    #87ff77 0%,
-    #85ff7a 0%,
-    #88ff7f 21%,
-    #94f985 52%,
-    #55cf57 78%,
-    #2ab147 100%
+    #368f2b 0%,
+    #368f2b 0%,
+    #2b6c23 21%,
+    #63a95a 52%,
+    #368f2b 78%,
+    #368f2b 100%
     );
     background-size: 100%;
     margin-bottom: 5rem;
@@ -392,7 +392,7 @@
     background-image: linear-gradient(to bottom,
     rgba(0,0,0,0) 0%, 
     rgba(17,17,17,0.6) 100%),
-    url('/images/FoodPic1.jpg');
+    url('/images/Carne.jpg');
     background-size: cover;
     position: relative;
     color: #fff;
@@ -472,7 +472,7 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #1dc128;
+    background: #368f2b;
     position: absolute;
     top: 440px;
     left: 30px;
@@ -487,7 +487,7 @@
 
 @media screen and (max-width: 480px){
     .services{
-        height: 5150px;
+        height: 5020px;
     }
     .services h1{
         font-size: 1.2rem;
@@ -608,7 +608,7 @@ footer__links{
         margin-bottom: 2rem;
     }
     .footer__link--wrapper{
-        flex-direction: column;
+        flex-direction:column;
     }
     .social__media--wrap{
         flex-direction: column;
@@ -687,5 +687,3 @@ body {
   .menu-item-content .price {
     font-weight: bold;
   }
-
-
