@@ -30,7 +30,7 @@
 
 #navbar__logo{
     background-color: #368f2b;
-    background-image: linear-gradient(to top, #368f2b 0%, rgb(8, 48, 20) 100%);
+    background-image: linear-gradient(to top, #867710  0%, #368f2b 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -92,7 +92,7 @@
 }
 
 .button:hover{
-    background: #4837ff;
+    background: #ab9713;
     transition: all 0.3s ease;
 }
 
@@ -234,7 +234,7 @@
 .main__content h2{
     font-size: 4rem;
     background-color: #1dc128;
-    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+    background-image: linear-gradient(to top, #867710 0%, #bca614 100%);
     background-size: 100;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -251,11 +251,11 @@
 
 .main__btn {
     font-size: 1rem;
-    background-image: linear-gradient(to top, #368f2b 25%, #368f2b 100%);
+    background: #368f2b;
     padding: 14px 32px;
     border: none;
     border-radius: 4px;
-    color: #fff;
+    color: #368f2b;
     margin-top: 2rem;
     cursor: pointer;
     position: relative;
@@ -283,7 +283,8 @@
 }
 
 .main__btn:hover {
-    color: #fff;
+    background: #ab9713;
+    transition: all 0.3s ease;
 
 }
 
@@ -392,7 +393,7 @@
     background-image: linear-gradient(to bottom,
     rgba(0,0,0,0) 0%, 
     rgba(17,17,17,0.6) 100%),
-    url('/images/Carne.jpg');
+    url('images/Nova.jpg');
     background-size: cover;
     position: relative;
     color: #fff;
@@ -402,56 +403,56 @@
     background-image: linear-gradient(to bottom,
     rgba(0,0,0,0) 0%, 
     rgba(17,17,17,0.6) 100%),
-    url('/images/FoodPic2.jpg');
+    url('images/FoodPic2.jpg');
 }
 
 .services__card:nth-child(3){
     background-image: linear-gradient(to bottom,
     rgba(0,0,0,0) 0%, 
     rgba(17,17,17,0.6) 100%),
-    url('/images/FoodPic2.jpg');
+    url('images/FoodPic2.jpg');
 }
 
 .services__card:nth-child(4){
     background-image: linear-gradient(to bottom,
     rgba(0,0,0,0) 0%, 
     rgba(17,17,17,0.6) 100%),
-    url('/images/FoodPic2.jpg');
+    url('images/City.jpg');
 }
 
 .services__card:nth-child(5){
     background-image: linear-gradient(to bottom,
     rgba(0,0,0,0) 0%, 
     rgba(17,17,17,0.6) 100%),
-    url('/images/FoodPic2.jpg');
+    url('images/Premier.jpg');
 }
 
 .services__card:nth-child(6){
     background-image: linear-gradient(to bottom,
     rgba(0,0,0,0) 0%, 
     rgba(17,17,17,0.6) 100%),
-    url('/images/FoodPic2.jpg');
+    url('images/FoodPic2.jpg');
 }
 
 .services__card:nth-child(7){
     background-image: linear-gradient(to bottom,
     rgba(0,0,0,0) 0%, 
     rgba(17,17,17,0.6) 100%),
-    url('/images/FoodPic2.jpg');
+    url('images/FoodPic2.jpg');
 }
 
 .services__card:nth-child(8){
     background-image: linear-gradient(to bottom,
     rgba(0,0,0,0) 0%, 
     rgba(17,17,17,0.6) 100%),
-    url('/images/FoodPic2.jpg');
+    url('images/FoodPic2.jpg');
 }
 
 .services__card:nth-child(9){
     background-image: linear-gradient(to bottom,
     rgba(0,0,0,0) 0%, 
     rgba(17,17,17,0.6) 100%),
-    url('/images/FoodPic2.jpg');
+    url('images/FoodPic2.jpg');
 }
 
 .services h2{
