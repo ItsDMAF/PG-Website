@@ -200,7 +200,7 @@
     }
 }
 
-/* QUIENES SOMOS */
+/* Main */
 
 .main{
     background-color: #f6f6f6;
@@ -350,6 +350,60 @@
     }
 }
 
+/* Quienes Somos */
+
+.quienes{
+    background: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+}
+
+.quienes h1{
+    background-color: #368f2b;
+    background-image: linear-gradient(to right, 
+    #368f2b 0%,
+    #368f2b 0%,
+    #2b6c23 21%,
+    #63a95a 52%,
+    #368f2b 78%,
+    #368f2b 100%
+    );
+    background-size: 100%;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.quienes h2{
+    margin-top:  1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #867710;
+    text-align: center;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+@media screen and (max-width: 480px){
+    .quienes{
+        height: 300px;
+    }
+    .quienes h1{
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+    .quienes h2{
+        font-size: 1.5rem;
+        margin-top: 0.3rem;
+    }
+    
+}
+
 /* Services CSS */
 
 .services{
@@ -496,7 +550,9 @@
         height: 5020px;
     }
     .services h1{
-        font-size: 1.2rem;
+        font-size: 2rem;
+        text-align: center;
+
     }
     .services__card{
         width: 300px;
