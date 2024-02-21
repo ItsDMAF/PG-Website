@@ -9,3 +9,4 @@ menu.addEventListener('click', function() {
 function redirectToMenu(location) {
     window.location.href = location + ".html";
 }
+
