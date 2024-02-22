@@ -524,6 +524,7 @@
 .services__card botton{
     color: #fff;
     padding: 10px 20px;
+    font-size: medium;
     border: none;
     outline: none;
     border-radius: 4px;
@@ -540,8 +541,9 @@
     cursor: pointer;
 }
 
-.services__card button:hover{
-    color: #867710;
+.services__card botton:hover{
+    transform: scale(1.075);
+    background-color: #867710;
     transition: 0.2s ease-in;
 }
 
