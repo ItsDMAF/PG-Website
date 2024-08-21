@@ -709,117 +709,102 @@ body {
     font-weight: bold;
   }
 
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    margin: 0;
-    padding: 0;
-}
+  /*------------------------------------------------ */
 
 .menu-container {
     width: 100%;
-    max-width: 1000px; /* Smaller max width */
-    margin: 0 auto;
-    background-color: #f9f9f9;
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #f4f4f4;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    padding: 15px; /* Smaller padding */
-}
-
-.header-left {
-    display: flex;
-    gap: 10px;
-}
-
-.menu-category {
-    font-size: 20px; /* Smaller font size */
-    font-weight: bold;
-    background-color: #4caf50;
-    color: white;
-    padding: 8px 16px; /* Smaller padding */
-    border-radius: 5px;
-}
-
-.header-right {
-    display: flex;
-    align-items: center;
-    gap: 15px; /* Smaller gap */
+    margin-bottom: 20px;
 }
 
 .combo-title {
-    font-size: 40px; /* Smaller font size */
+    font-size: 36px;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .combo-number {
-    font-size: 40px; /* Smaller font size */
-    background-color: #a1d300;
+    font-size: 36px;
+    background-color: #7fc000;
     color: white;
-    padding: 8px 16px; /* Smaller padding */
-    border-radius: 50%;
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 
 .content {
     display: flex;
-    justify-content: space-between;
-    padding: 15px; /* Smaller padding */
+    flex-direction: column;
+    align-items: center;
 }
 
 .image-section img {
-    max-width: 100%;
-    border-radius: 10px;
+    max-width: 250px;
+    border-radius: 15px;
+    cursor: pointer;
 }
 
 .combo-items {
-    display: grid; 
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 15px; /* Smaller gap */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+    display: none; /* Initially hide the combo items */
 }
 
 .combo-item {
     display: flex;
     align-items: center;
-    gap: 15px; /* Smaller gap */
-    font-size: 20px; /* Smaller font size */
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.combo-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #7fc000;
 }
 
 .combo-description {
+    font-size: 18px;
     flex-grow: 1;
 }
 
 .combo-price {
-    font-size: 20px; /* Smaller font size */
-    font-weight: bold;
+    font-size: 18px;
     background-color: #ffcc00;
     color: black;
-    padding: 4px 8px; /* Smaller padding */
+    padding: 5px 10px;
     border-radius: 5px;
-}
-
-.footer {
-    display: flex;
-    justify-content: space-between;
-    background-color: #000;
-    color: white;
-    padding: 15px; /* Smaller padding */
-    border-radius: 0 0 10px 10px;
-}
-
-.footer-section {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-title {
-    font-size: 16px; /* Smaller font size */
     font-weight: bold;
 }
 
-.footer-details {
-    font-size: 14px; /* Smaller font size */
+#back-button {
+    grid-column: span 2;
+    background-color: #7fc000;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#back-button:hover {
+    background-color: #6aa000;
 }
