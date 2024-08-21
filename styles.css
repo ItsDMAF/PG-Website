@@ -708,3 +708,118 @@ body {
   .menu-item-content .price {
     font-weight: bold;
   }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container {
+    width: 100%;
+    max-width: 1000px; /* Smaller max width */
+    margin: 0 auto;
+    background-color: #f9f9f9;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px; /* Smaller padding */
+}
+
+.header-left {
+    display: flex;
+    gap: 10px;
+}
+
+.menu-category {
+    font-size: 20px; /* Smaller font size */
+    font-weight: bold;
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 16px; /* Smaller padding */
+    border-radius: 5px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Smaller gap */
+}
+
+.combo-title {
+    font-size: 40px; /* Smaller font size */
+    font-weight: bold;
+}
+
+.combo-number {
+    font-size: 40px; /* Smaller font size */
+    background-color: #a1d300;
+    color: white;
+    padding: 8px 16px; /* Smaller padding */
+    border-radius: 50%;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px; /* Smaller padding */
+}
+
+.image-section img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.combo-items {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 15px; /* Smaller gap */
+}
+
+.combo-item {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Smaller gap */
+    font-size: 20px; /* Smaller font size */
+}
+
+.combo-description {
+    flex-grow: 1;
+}
+
+.combo-price {
+    font-size: 20px; /* Smaller font size */
+    font-weight: bold;
+    background-color: #ffcc00;
+    color: black;
+    padding: 4px 8px; /* Smaller padding */
+    border-radius: 5px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    color: white;
+    padding: 15px; /* Smaller padding */
+    border-radius: 0 0 10px 10px;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-title {
+    font-size: 16px; /* Smaller font size */
+    font-weight: bold;
+}
+
+.footer-details {
+    font-size: 14px; /* Smaller font size */
+}
