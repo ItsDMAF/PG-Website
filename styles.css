@@ -710,11 +710,17 @@ body {
   }
 
   /*------------------------------------------------ */
+.menu-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the two columns */
+    width: 100%;
+}
 
 .menu-container {
     width: 100%;
-    max-width: 500px;
-    margin: 20px auto;
+    margin-top: 20px;
+    max-width: 500px; /* Adjusted to allow both containers side by side */
     background-color: #f4f4f4;
     border-radius: 15px;
     padding: 20px;
@@ -793,7 +799,7 @@ body {
     font-weight: bold;
 }
 
-#back-button {
+.back-button {
     grid-column: span 2;
     background-color: #7fc000;
     color: white;
@@ -805,6 +811,6 @@ body {
     margin-top: 10px;
 }
 
-#back-button:hover {
+.back-button:hover {
     background-color: #6aa000;
 }

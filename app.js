@@ -10,20 +10,22 @@ function redirectToMenu(location) {
     window.location.href = location + ".html";
 }
 
-document.getElementById('combo-image').addEventListener('click', function() {
-    const imageSection = document.getElementById('image-section');
-    const comboItems = document.getElementById('combo-items');
-    
-    imageSection.style.display = 'none';
-    
-    comboItems.style.display = 'grid';
+document.querySelectorAll('.combo-image').forEach(function(image, index) {
+    image.addEventListener('click', function() {
+        const imageSection = document.getElementById(`image-section-${index + 1}`);
+        const comboItems = document.getElementById(`combo-items-${index + 1}`);
+
+        imageSection.style.display = 'none';
+        comboItems.style.display = 'grid';
+    });
 });
 
-document.getElementById('back-button').addEventListener('click', function() {
-    const imageSection = document.getElementById('image-section');
-    const comboItems = document.getElementById('combo-items');
-    
-    imageSection.style.display = 'block';
-    
-    comboItems.style.display = 'none';
+document.querySelectorAll('.back-button').forEach(function(button, index) {
+    button.addEventListener('click', function() {
+        const imageSection = document.getElementById(`image-section-${index + 1}`);
+        const comboItems = document.getElementById(`combo-items-${index + 1}`);
+
+        imageSection.style.display = 'block';
+        comboItems.style.display = 'none';
+    });
 });
