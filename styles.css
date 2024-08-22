@@ -710,22 +710,31 @@ body {
   }
 
   /*------------------------------------------------ */
-.menu-row {
+  .menu-columns {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Space between the two columns */
+    gap: 20px; /* Space between the columns */
     width: 100%;
+    padding: 20px; /* Add padding around the entire container */
+    box-sizing: border-box;
+}
+
+.menu-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between the containers within each column */
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
 }
 
 .menu-container {
-    width: 100%;
-    margin-top: 20px;
-    max-width: 500px; /* Adjusted to allow both containers side by side */
     background-color: #f4f4f4;
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    box-sizing: border-box;
 }
 
 .header {
@@ -756,9 +765,13 @@ body {
 }
 
 .image-section img {
-    max-width: 250px;
+    max-width: 100%;
+    max-height: 250px; /* Set a maximum height */
+    width: auto;
+    height: auto;
     border-radius: 15px;
     cursor: pointer;
+    object-fit: cover; /* Ensure the image covers the area without stretching */
 }
 
 .combo-items {
@@ -782,7 +795,7 @@ body {
 .combo-number {
     font-size: 24px;
     font-weight: bold;
-    color: #7fc000;
+    color: #ffffff;
 }
 
 .combo-description {
