@@ -827,3 +827,52 @@ body {
 .back-button:hover {
     background-color: #6aa000;
 }
+
+/*--------------------------------*/
+.menu-option-container {
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.menu li {
+    padding: 0 15px;
+}
+
+.pupusas {
+    color: green;
+    font-weight: bold;
+}
+
+.items {
+    color: white;
+}
+
+.tacos {
+    color: yellow;
+    font-weight: bold;
+}
+
+.accompanied {
+    background-color: #f9dc5c;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.accompanied span {
+    font-weight: bold;
+}
