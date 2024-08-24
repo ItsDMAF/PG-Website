@@ -773,6 +773,11 @@ body {
     cursor: pointer;
     object-fit: cover; /* Ensure the image covers the area without stretching */
 }
+.image-section img:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
 
 .combo-items {
     display: grid;
