@@ -796,13 +796,16 @@ body {
     cursor: pointer;
 }
 
-.combo-items {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    margin-top: 20px;
-    display: none;
-    /* Initially hide the combo items */
+.combo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .combo-item {
@@ -878,7 +881,7 @@ body {
 }
 
 .pupusas {
-    color: #7fc000;
+    color: #82c105;
     font-weight: bold;
 }
 
