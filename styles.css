@@ -865,33 +865,40 @@ body {
     margin-right: 100px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    /* Added to spread items across the container */
+    justify-content: space-around;
+    text-align: center;
 }
 
 .menu {
     display: flex;
     align-items: center;
     color: white;
-    flex-grow: 1;
+    width: 100%;
+    justify-content: space-between;
 }
 
-.menu>div {
-    padding: 0 15px;
+.pupusas-group, .tacos-group {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.pupusas, .tacos {
+    font-weight: bold;
+    margin-right: 10px;
 }
 
 .pupusas {
     color: #82c105;
-    font-weight: bold;
-}
-
-.items {
-    color: white;
 }
 
 .tacos {
     color: #ffcc00;
-    font-weight: bold;
+}
+
+.items {
+    color: white;
 }
 
 .accompanied {
@@ -900,7 +907,8 @@ body {
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 30px;
-    height: 50px;
     text-align: center;
     margin-left: auto;
+    margin-right: auto;
+    flex-grow: 1;
 }
