@@ -952,6 +952,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    margin-left: -50px; /* Adjust this value to overlap the text over the image */
+}
+
+.combo-image1 img {
+    border-radius: 10px;
+    width: 700px;
+    height: auto;
+    margin-right: 30px;
+    z-index: 1; /* Ensure the image is behind the text */
 }
 
 .combo-title1 {
@@ -960,16 +969,23 @@ body {
     font-weight: bold;
     margin-bottom: 20px;
     text-align: left;
+    z-index: 2; /* Ensure the text is in front */
 }
 
 .combo-description1 {
     font-size: 20px;
     margin-bottom: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-end;
     gap: 10px;
+    z-index: 2; /* Ensure the text is in front */
 }
+
+.combo-container1 {
+    position: relative; /* Allows overlapping elements */
+}
+
 
 .item1 {
     background-color: #b59b01;
