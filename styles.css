@@ -543,7 +543,7 @@
     font-size: 2rem;
 }
 
-footer__links {
+.footer__links {
     width: 100%;
     max-width: 1000px;
     display: flex;
@@ -857,8 +857,8 @@ body {
 /*--------------------------------*/
 .menu-option-container {
     background-color: #212228;
-    border-radius: 20px;
-    padding: 10px 20px;
+    border-radius: 22px;
+    padding: 15px;
     margin-top: 30px;
     margin-bottom: 60px;
     margin-left: 100px;
@@ -868,7 +868,6 @@ body {
     justify-content: space-around;
     text-align: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-
 }
 
 .menu {
@@ -908,7 +907,7 @@ body {
     color: black;
     font-weight: bold;
     padding: 10px 20px;
-    border-radius: 30px;
+    border-radius: 7px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -935,7 +934,6 @@ body {
     text-align: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
-
 
 .combo-image1 {
     display: flex;
@@ -1005,4 +1003,110 @@ body {
     border-radius: 10px;
     color: #fff;
     text-align: center;
+}
+
+
+/*--------------*/
+.container2 {
+    background-color: #f4f4f4;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 20px 40px 20px 40px; /* Padding: top 20px, right 40px, bottom 20px, left 0 */
+    margin: 30px 100px 60px 100px; /* Margin: top 30px, right 100px, bottom 60px, left 100px */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px; /* Spacing below title */
+    text-align: center; /* Center the title */
+}
+
+.combo2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.combo-image2 img {
+    border-radius: 15px;
+    width: 250px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.combo-image2 img:hover{ 
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+.combo-options2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Defines 3 columns */
+    gap: 20px;
+}
+
+.option2 {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: left;
+    display: flex; /* Flexbox to align number and text horizontally */
+    align-items: center; /* Vertically align content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.number2 {
+    font-size: 30px;
+    color: green;
+    font-weight: bold;
+    margin-right: 15px; /* Adds space between number and text */
+}
+
+p {
+    margin: 10px 0;
+    flex: 1; /* Make text take up remaining space */
+}
+
+.price2 {
+    background-color: #f5cc5c;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Custom styling for number 7 to span below number 5 */
+.option2:nth-child(7) {
+    justify-content: center; /* Make it span three columns */
+    align-items: center;
+}
+
+.container-individuales {
+    background-color: #212228;
+    border-radius: 22px;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container-individuales h1 {
+    color: #f9f9f9;
+    font-size: 25px;
+
+}
+
+.individual-price {
+    background-color: #82c105;
+    border-radius: 10px;
+    color: hsl(0, 0%, 12%);
 }
