@@ -5,6 +5,16 @@
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f6f6;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+/*
+NAVBAR---------------------------------------------------------------------------
+*/
 .navbar {
     background: #fff;
     height: 80px;
@@ -201,9 +211,9 @@
 
     }
 }
-
-/* Main */
-
+/*
+MAIN SECTION-------------------------------------------------------------------------
+*/
 .main {
     background-color: #f6f6f6;
 }
@@ -251,7 +261,6 @@
     color: #867710;
 }
 
-
 .main__img--container {
     text-align: center;
 }
@@ -260,8 +269,6 @@
     height: 80%;
     width: 80%;
 }
-
-/* Mobile Responsive*/
 
 @media screen and (max-width: 780px) {
     .main__container {
@@ -309,9 +316,9 @@
         font-size: 1.5rem;
     }
 }
-
-/* Quienes Somos */
-
+/*
+QUIENES SOME-----------------------------------------------------------------------------
+*/
 .quienes {
     background: #f6f6f6;
     display: flex;
@@ -364,9 +371,9 @@
     }
 
 }
-
-/* Services CSS */
-
+/*
+LOCALIZACIONES------------------------------------------------------------------------
+*/
 .services {
     background: #f6f6f6;
     display: flex;
@@ -522,9 +529,9 @@
         width: 300px;
     }
 }
-
-/*Footer CSS */
-
+/*
+FOOTER----------------------------------------------------------------------------------------
+*/
 .footer__container {
     background-color: #212228;
     padding: 5rem 0;
@@ -584,9 +591,9 @@
     color: #368f2b;
     transition: 0.3s ease-out;
 }
-
-/* Social Icons */
-
+/* 
+SOCIAL ICON----------------------------------------------------------------------------------------
+*/
 .social__icon--link {
     color: #fff;
     font-size: 24px;
@@ -651,17 +658,9 @@
         width: 100%;
     }
 }
-
-/* Menus Oficiales de Pupusas & Grill */
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f6f6f6;
-    color: #000000;
-    margin: 0;
-    padding: 0;
-}
-
+/*
+COMBOS Y SUS COLUMNAS---------------------------------------------------------------------------
+*/
 .container__menu h1 {
     text-align: center;
     margin-top: 40px;
@@ -720,7 +719,6 @@ body {
     font-weight: bold;
 }
 
-/*------------------------------------------------ */
 .menu-columns {
     display: flex;
     justify-content: center;
@@ -853,8 +851,9 @@ body {
 .back-button:hover {
     background-color: #6aa000;
 }
-
-/*--------------------------------*/
+/*
+OPCION DE PRODUCTO PARA LOS COMBOS------------------------------------------------------------------
+*/
 .menu-option-container {
     background-color: #212228;
     border-radius: 22px;
@@ -878,14 +877,16 @@ body {
     justify-content: space-between;
 }
 
-.pupusas-group, .tacos-group {
+.pupusas-group,
+.tacos-group {
     display: flex;
     align-items: center;
     flex-grow: 1;
     justify-content: center;
 }
 
-.pupusas, .tacos {
+.pupusas,
+.tacos {
     font-weight: bold;
     margin-right: 10px;
 }
@@ -913,9 +914,9 @@ body {
     margin-right: auto;
     flex-grow: 1;
 }
-
-/*----------------------------*/
-
+/*
+COMBO FAMILIAR------------------------------------------------------------------------------
+*/
 .combo-container1 {
     background-color: #f4f4f4;
     color: white;
@@ -953,7 +954,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    margin-left: -50px; /* Adjust this value to overlap the text over the image */
+    margin-left: -50px;
+    /* Adjust this value to overlap the text over the image */
 }
 
 .combo-image1 img {
@@ -961,7 +963,8 @@ body {
     width: 700px;
     height: auto;
     margin-right: 30px;
-    z-index: 1; /* Ensure the image is behind the text */
+    z-index: 1;
+    /* Ensure the image is behind the text */
 }
 
 .combo-title1 {
@@ -970,7 +973,8 @@ body {
     font-weight: bold;
     margin-bottom: 20px;
     text-align: left;
-    z-index: 2; /* Ensure the text is in front */
+    z-index: 2;
+    /* Ensure the text is in front */
 }
 
 .combo-description1 {
@@ -980,13 +984,14 @@ body {
     flex-direction: row;
     align-items: flex-end;
     gap: 10px;
-    z-index: 2; /* Ensure the text is in front */
+    z-index: 2;
+    /* Ensure the text is in front */
 }
 
 .combo-container1 {
-    position: relative; /* Allows overlapping elements */
+    position: relative;
+    /* Allows overlapping elements */
 }
-
 
 .item1 {
     background-color: #b59b01;
@@ -1004,22 +1009,26 @@ body {
     color: #fff;
     text-align: center;
 }
-
-
-/*--------------*/
+/*
+COMBO GRILL------------------------------------------------------------------------------
+*/
 .container2 {
     background-color: #f4f4f4;
     color: rgb(0, 0, 0);
     border-radius: 20px;
-    padding: 20px 40px 20px 40px; /* Padding: top 20px, right 40px, bottom 20px, left 0 */
-    margin: 30px 100px 60px 100px; /* Margin: top 30px, right 100px, bottom 60px, left 100px */
+    padding: 20px 40px 20px 40px;
+    /* Padding: top 20px, right 40px, bottom 20px, left 0 */
+    margin: 30px 100px 60px 100px;
+    /* Margin: top 30px, right 100px, bottom 60px, left 100px */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
     font-size: 36px;
-    margin-bottom: 20px; /* Spacing below title */
-    text-align: center; /* Center the title */
+    margin-bottom: 20px;
+    /* Spacing below title */
+    text-align: center;
+    /* Center the title */
 }
 
 .combo2 {
@@ -1036,7 +1045,7 @@ h1 {
     margin-right: 20px;
 }
 
-.combo-image2 img:hover{ 
+.combo-image2 img:hover {
     transform: scale(1.075);
     transition: 0.2s ease-in;
     cursor: pointer;
@@ -1044,7 +1053,8 @@ h1 {
 
 .combo-options2 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Defines 3 columns */
+    grid-template-columns: repeat(3, 1fr);
+    /* Defines 3 columns */
     gap: 20px;
 }
 
@@ -1053,8 +1063,10 @@ h1 {
     border-radius: 10px;
     padding: 10px;
     text-align: left;
-    display: flex; /* Flexbox to align number and text horizontally */
-    align-items: center; /* Vertically align content */
+    display: flex;
+    /* Flexbox to align number and text horizontally */
+    align-items: center;
+    /* Vertically align content */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -1062,12 +1074,14 @@ h1 {
     font-size: 30px;
     color: green;
     font-weight: bold;
-    margin-right: 15px; /* Adds space between number and text */
+    margin-right: 15px;
+    /* Adds space between number and text */
 }
 
 p {
     margin: 10px 0;
-    flex: 1; /* Make text take up remaining space */
+    flex: 1;
+    /* Make text take up remaining space */
 }
 
 .price2 {
@@ -1077,13 +1091,9 @@ p {
     color: #333;
     font-weight: bold;
 }
-
-/* Custom styling for number 7 to span below number 5 */
-.option2:nth-child(7) {
-    justify-content: center; /* Make it span three columns */
-    align-items: center;
-}
-
+/*
+INDIVUDUALES--------------------------------------------------------------------------------------
+*/
 .container-individuales {
     background-color: #212228;
     border-radius: 22px;
