@@ -1053,7 +1053,7 @@ h1 {
 
 .combo-options2 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     /* Defines 3 columns */
     gap: 20px;
 }
@@ -1102,21 +1102,43 @@ INDIVUDUALES--------------------------------------------------------------------
     margin-bottom: 60px;
     margin-left: 100px;
     margin-right: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     text-align: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.container-individuales h1 {
+.menu-title {
+    color: #f9f9f9;
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%; /* Make sure the title spans the full width */
+}
+
+.items-row {
+    display: flex;
+    justify-content: space-around; /* Spread items evenly across a single row */
+    align-items: center;
+    flex-wrap: nowrap; /* Ensure all items stay in one row */
+}
+
+.opcion-individual {
+    background-color: #28282d;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 15px;
+    text-align: center;
+    flex-grow: 1; /* Ensures each item takes up an equal amount of space */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.opcion-individual h1 {
     color: #f9f9f9;
     font-size: 25px;
-
 }
 
 .individual-price {
     background-color: #82c105;
     border-radius: 10px;
     color: hsl(0, 0%, 12%);
+    padding: 5px 10px;
 }
