@@ -39,19 +39,23 @@ NAVBAR--------------------------------------------------------------------------
 }
 
 #navbar__logo {
-    background-color: #368f2b;
-    background-image: linear-gradient(to top, #867710 0%, #368f2b 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    background-color: transparent; /* No background on the entire logo */
     display: flex;
     align-items: center;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+    font-weight: bold;
 }
+
+#navbar__logo i {
+    color: #bca614; /* Color for the icon (e.g., white) */
+}
+
+#navbar__logo {
+    color: #368f2b; /* Color for the text (e.g., yellow) */
+}
+
 
 .fa-solid fa-utensils {
     margin-right: 0.5rem;
@@ -229,13 +233,13 @@ MAIN SECTION--------------------------------------------------------------------
     z-index: 1;
     width: 100%;
     max-width: 1300px;
-    padding: 0 50px
+    padding: 0 100px
 }
 
 .main__content h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     background-color: #368f2b;
-    background-image: linear-gradient(to top, #368f2b 75%, rgb(8, 48, 20) 100%);
+    /*background-image: linear-gradient(to top, #368f2b 75%, rgb(8, 48, 20) 100%);*/
     background-size: 100;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -244,9 +248,9 @@ MAIN SECTION--------------------------------------------------------------------
 }
 
 .main__content h2 {
-    font-size: 4rem;
-    background-color: #1dc128;
-    background-image: linear-gradient(to top, #867710 0%, #bca614 100%);
+    font-size: 5rem;
+    background-color: #bca614;
+    /*background-image: linear-gradient(to top, #867710 0%, #bca614 100%);*/
     background-size: 100;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -256,7 +260,7 @@ MAIN SECTION--------------------------------------------------------------------
 
 .main__content p {
     margin-top: 1rem;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
     color: #867710;
 }
@@ -283,36 +287,46 @@ MAIN SECTION--------------------------------------------------------------------
 
     .main__content {
         text-align: center;
-        margin-bottom: 4rem;
+        margin-bottom: 0.5rem;
     }
 
     .main__content h1 {
-        font-size: 2.5rem;
+        font-size: 4rem;
         margin-top: 2rem;
     }
 
     .main__content h2 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     .main__content p {
         margin-top: 1rem;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
 }
 
 @media screen and (max-width: 480px) {
+
+    .main__container {
+        display: grid;
+        grid-template-columns: auto;
+        align-self: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 80vh;
+    }
     .main__content h1 {
-        font-size: 2rem;
-        margin-top: 3rem;
+        font-size: 2.5rem;
+        margin-top: 1rem;
     }
 
     .main__content h2 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .main__content p {
-        margin-top: 2rem;
+        margin-top: 1rem;
         font-size: 1.5rem;
     }
 }
@@ -329,16 +343,16 @@ QUIENES SOME--------------------------------------------------------------------
 
 .quienes h1 {
     background-color: #368f2b;
-    background-image: linear-gradient(to right,
+    /*background-image: linear-gradient(to right,
             #368f2b 0%,
             #368f2b 0%,
             #2b6c23 21%,
             #63a95a 52%,
             #368f2b 78%,
-            #368f2b 100%);
+            #368f2b 100%);*/
     background-size: 100%;
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -346,30 +360,45 @@ QUIENES SOME--------------------------------------------------------------------
 }
 
 .quienes h2 {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     font-size: 2rem;
     font-weight: 700;
     color: #867710;
     text-align: center;
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+@media screen and (max-width: 780px) {
+    .quienes {
+        height: 60vh;
+    }
+
+    .quienes h1 {
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+
+    .quienes h2 {
+        font-size: 2rem;
+        margin-top: 0.5rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .quienes {
-        height: 300px;
+        height: 40vh;
     }
 
     .quienes h1 {
         font-size: 2rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
 
     .quienes h2 {
-        font-size: 1.5rem;
-        margin-top: 0.3rem;
+        font-size: 1rem;
+        margin-top: 0.5rem;
     }
-
 }
 /*
 LOCALIZACIONES------------------------------------------------------------------------
@@ -379,18 +408,18 @@ LOCALIZACIONES------------------------------------------------------------------
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 510vh;
+    height: 490vh;
 }
 
 .services h1 {
     background-color: #368f2b;
-    background-image: linear-gradient(to right,
+    /*background-image: linear-gradient(to right,
             #368f2b 0%,
             #368f2b 0%,
             #2b6c23 21%,
             #63a95a 52%,
             #368f2b 78%,
-            #368f2b 100%);
+            #368f2b 100%);*/
     background-size: 100%;
     margin-bottom: 5rem;
     font-size: 2.5rem;
@@ -410,9 +439,9 @@ LOCALIZACIONES------------------------------------------------------------------
     margin: 1rem;
     height: 525px;
     width: 400px;
-    border-radius: 4px;
+    border-radius: 10px;
     background-image: linear-gradient(to bottom,
-            rgba(0, 0, 0, 0) 0%,
+            rgba(17, 17, 17, 0.6) 0%,
             rgba(17, 17, 17, 0.6) 100%),
         url('images/Nova.jpg');
     background-size: cover;
@@ -422,71 +451,71 @@ LOCALIZACIONES------------------------------------------------------------------
 
 .services__card:nth-child(2) {
     background-image: linear-gradient(to bottom,
-            rgba(0, 0, 0, 0) 0%,
+            rgba(17, 17, 17, 0.6) 0%,
             rgba(17, 17, 17, 0.6) 100%),
-        url('images/FoodPic2.jpg');
+        url('images/LaGranja.jpg');
 }
 
 .services__card:nth-child(3) {
     background-image: linear-gradient(to bottom,
-            rgba(0, 0, 0, 0) 0%,
+            rgba(17, 17, 17, 0.6) 0%,
             rgba(17, 17, 17, 0.6) 100%),
-        url('images/FoodPic2.jpg');
+        url('images/Catacamas.jpg');
 }
 
 .services__card:nth-child(4) {
     background-image: linear-gradient(to bottom,
-            rgba(0, 0, 0, 0) 0%,
+            rgba(17, 17, 17, 0.6) 0%,
             rgba(17, 17, 17, 0.6) 100%),
         url('images/City.jpg');
 }
 
 .services__card:nth-child(5) {
     background-image: linear-gradient(to bottom,
-            rgba(0, 0, 0, 0) 0%,
+            rgba(17, 17, 17, 0.6) 0%,
             rgba(17, 17, 17, 0.6) 100%),
         url('images/Premier.jpg');
 }
 
 .services__card:nth-child(6) {
     background-image: linear-gradient(to bottom,
-            rgba(0, 0, 0, 0) 0%,
+            rgba(17, 17, 17, 0.6) 0%,
             rgba(17, 17, 17, 0.6) 100%),
-        url('images/FoodPic2.jpg');
+        url('images/Centro.jpg');
 }
 
 .services__card:nth-child(7) {
     background-image: linear-gradient(to bottom,
-            rgba(0, 0, 0, 0) 0%,
+            rgba(17, 17, 17, 0.6) 0%,
             rgba(17, 17, 17, 0.6) 100%),
-        url('images/FoodPic2.jpg');
+        url('images/Juticalpa.jpg');
 }
 
 .services__card:nth-child(8) {
     background-image: linear-gradient(to bottom,
-            rgba(0, 0, 0, 0) 0%,
+            rgba(17, 17, 17, 0.6) 0%,
             rgba(17, 17, 17, 0.6) 100%),
-        url('images/FoodPic2.jpg');
+        url('images/Choluteca.jpg');
 }
 
 .services__card:nth-child(9) {
     background-image: linear-gradient(to bottom,
-            rgba(0, 0, 0, 0) 0%,
+            rgba(17, 17, 17, 0.6) 0%,
             rgba(17, 17, 17, 0.6) 100%),
-        url('images/FoodPic2.jpg');
+        url('images/Proximamente.png');
 }
 
 .services h2 {
     position: absolute;
-    top: 350px;
+    top: 380px;
     left: 30px;
 }
 
-.services__card p {
+/*.services__card p {
     position: absolute;
     top: 400px;
     left: 30px;
-}
+}*/
 
 .services__card botton {
     color: #fff;
@@ -503,20 +532,36 @@ LOCALIZACIONES------------------------------------------------------------------
 }
 
 .services__card:hover {
-    transform: scale(1.075);
+    transform: scale(1.035);
     transition: 0.2s ease-in;
     cursor: pointer;
 }
 
 .services__card botton:hover {
     transform: scale(1.075);
-    background-color: #867710;
+    background-color: #bca614;
     transition: 0.2s ease-in;
+}
+
+@media screen and (max-width: 780px) {
+    .services {
+        height: 520vh;
+    }
+
+    .services h1 {
+        font-size: 2rem;
+        text-align: center;
+
+    }
+
+    .services__card {
+        width: 300px;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .services {
-        height: 5020px;
+        height: 920vh;
     }
 
     .services h1 {
@@ -532,6 +577,37 @@ LOCALIZACIONES------------------------------------------------------------------
 /*
 FOOTER----------------------------------------------------------------------------------------
 */
+footer {
+    background-color: #212228;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    justify-content: center;
+    height: 25vh;
+}
+
+.social-icons {
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #bca614; /* Hover color for social icons */
+}
+
+.copyright {
+    font-size: 20px;
+    color: white;
+}
+
+/*
 .footer__container {
     background-color: #212228;
     padding: 5rem 0;
@@ -575,7 +651,7 @@ FOOTER--------------------------------------------------------------------------
     margin-bottom: 16px;
 }
 
-.footer__link--items>h2 {
+.footer__link--items h2 {
     color: #fff;
     text-decoration: none;
     margin-bottom: 0.5rem;
@@ -591,6 +667,7 @@ FOOTER--------------------------------------------------------------------------
     color: #368f2b;
     transition: 0.3s ease-out;
 }
+*/
 /* 
 SOCIAL ICON----------------------------------------------------------------------------------------
 */
@@ -663,8 +740,7 @@ COMBOS Y SUS COLUMNAS-----------------------------------------------------------
 */
 .container__menu h1 {
     text-align: center;
-    margin-top: 40px;
-    font-size: 36px;
+    font-size: 56px;
     background-color: #f6f6f6;
     background-image: linear-gradient(to top, #368f2b 75%, rgb(8, 48, 20) 100%);
     background-size: 100%;
@@ -672,71 +748,21 @@ COMBOS Y SUS COLUMNAS-----------------------------------------------------------
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    margin-bottom: 40px;
 }
 
 .container__menu {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
 }
 
-.container__menu h2 {
-    background-color: #1f1f1f;
-    background-image: linear-gradient(to top, #368f2b 75%, rgb(8, 48, 20) 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    padding: 10px;
-    margin-top: 30px;
-}
-
-.menu-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.menu-item img {
-    width: 200px;
-    height: auto;
-    margin-right: 20px;
-    border: 2px solid #1f1f1f;
-
-}
-
-.menu-item-content {
-    flex: 1;
-}
-
-.menu-item-content h3,
-.menu-item-content p {
-    margin: 0;
-}
-
-.menu-item-content .price {
-    font-weight: bold;
-}
-
 .menu-columns {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    /* Space between the columns */
     width: 100%;
-    padding: 20px;
-    /* Add padding around the entire container */
-    box-sizing: border-box;
-}
-
-.menu-column {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    /* Space between the containers within each column */
-    width: 100%;
-    max-width: 500px;
     box-sizing: border-box;
 }
 
@@ -746,6 +772,8 @@ COMBOS Y SUS COLUMNAS-----------------------------------------------------------
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    height: 390px;
+    width: calc(50% - 20px);
     box-sizing: border-box;
 }
 
@@ -754,7 +782,7 @@ COMBOS Y SUS COLUMNAS-----------------------------------------------------------
 }
 
 .combo-title {
-    font-size: 36px;
+    font-size: 44px;
     font-weight: bold;
     display: flex;
     justify-content: center;
@@ -763,63 +791,34 @@ COMBOS Y SUS COLUMNAS-----------------------------------------------------------
 }
 
 .combo-number {
-    font-size: 36px;
-    background-color: #7fc000;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 10px;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-size: 44px;
+    font-weight: bold;
+    color: #7fc000;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .image-section img {
-    max-width: 100%;
-    max-height: 250px;
-    /* Set a maximum height */
-    width: auto;
-    height: auto;
+    width: 100%;
+    max-height: 200px;
     border-radius: 15px;
+    object-fit: contain; /* This ensures the full image is visible without cropping */
     cursor: pointer;
-    object-fit: cover;
-    /* Ensure the image covers the area without stretching */
 }
 
-.image-section img:hover {
-    transform: scale(1.075);
-    transition: 0.2s ease-in;
-    cursor: pointer;
+.combo-items {
+    margin-top: 10px;
 }
 
 .combo-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
     background-color: white;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
-}
-
-.combo-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.combo-number {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffffff;
 }
 
 .combo-description {
@@ -836,59 +835,66 @@ COMBOS Y SUS COLUMNAS-----------------------------------------------------------
     font-weight: bold;
 }
 
-.back-button {
-    grid-column: span 2;
-    background-color: #7fc000;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 10px;
+/* Responsive Styles */
+@media (max-width: 780px) {
+    .menu-container {
+        width: calc(50% - 20px);
+    }
 }
 
-.back-button:hover {
-    background-color: #6aa000;
+@media (max-width: 480px) {
+    .menu-container {
+        width: 100%;
+    }
+
+    .combo-title {
+        font-size: 32px;
+    }
+
+    .combo-number {
+        font-size: 32px;
+    }
+
+    .combo-description, .combo-price {
+        font-size: 20px;
+    }
 }
+
 /*
 OPCION DE PRODUCTO PARA LOS COMBOS------------------------------------------------------------------
 */
+/* Base container styling */
 .menu-option-container {
     background-color: #212228;
     border-radius: 22px;
     padding: 15px;
-    margin-top: 30px;
-    margin-bottom: 60px;
-    margin-left: 100px;
-    margin-right: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
+    margin: 30px auto;
+    max-width: 780px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
+/* Flexbox layout for the menu */
 .menu {
     display: flex;
     align-items: center;
-    color: white;
-    width: 100%;
     justify-content: space-between;
+    color: white;
+    gap: 15px;
 }
 
-.pupusas-group,
-.tacos-group {
+/* Individual menu sections */
+.menu-section {
     display: flex;
+    flex-direction: column;
     align-items: center;
     flex-grow: 1;
-    justify-content: center;
+    text-align: center;
 }
 
-.pupusas,
-.tacos {
+.menu-title {
     font-weight: bold;
-    margin-right: 10px;
+    margin-bottom: 5px;
 }
 
 .pupusas {
@@ -899,7 +905,7 @@ OPCION DE PRODUCTO PARA LOS COMBOS----------------------------------------------
     color: #ffcc00;
 }
 
-.items {
+.menu-items {
     color: white;
 }
 
@@ -909,11 +915,26 @@ OPCION DE PRODUCTO PARA LOS COMBOS----------------------------------------------
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 7px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    flex-grow: 1;
 }
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 480px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-section {
+        margin-bottom: 15px;
+    }
+
+    .accompanied {
+        padding: 10px;
+        margin-bottom: 0;
+    }
+}
+
+
 /*
 COMBO FAMILIAR------------------------------------------------------------------------------
 */
@@ -1023,7 +1044,7 @@ COMBO GRILL---------------------------------------------------------------------
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-h1 {
+.container2 h1 {
     font-size: 36px;
     margin-bottom: 20px;
     /* Spacing below title */
