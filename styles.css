@@ -770,7 +770,7 @@ COMBOS Y SUS COLUMNAS-----------------------------------------------------------
     background-color: #f4f4f4;
     border-radius: 15px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     height: 390px;
     width: calc(50% - 20px);
@@ -814,22 +814,22 @@ COMBOS Y SUS COLUMNAS-----------------------------------------------------------
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: #f4f4f4;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 .combo-description {
-    font-size: 18px;
+    font-size: 24px;
     flex-grow: 1;
 }
 
 .combo-price {
-    font-size: 18px;
+    font-size: 26px;
     background-color: #ffcc00;
     color: black;
+    margin-right: 30px;
     padding: 5px 10px;
     border-radius: 5px;
     font-weight: bold;
@@ -865,13 +865,22 @@ OPCION DE PRODUCTO PARA LOS COMBOS----------------------------------------------
 */
 /* Base container styling */
 .menu-option-container {
-    background-color: #212228;
-    border-radius: 22px;
-    padding: 15px;
-    margin: 30px auto;
-    max-width: 780px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #000000;
+    color: white;
+    border-radius: 20px;
+    padding-left: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    margin-left: 142px;
+    margin-right: 142px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Flexbox layout for the menu */
@@ -918,10 +927,20 @@ OPCION DE PRODUCTO PARA LOS COMBOS----------------------------------------------
 }
 
 /* Responsive adjustments for smaller screens */
+
+@media (max-width: 780px) {
+
+}
 @media (max-width: 480px) {
+
+    .menu-option-container{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
     .menu {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 
     .menu-section {
@@ -948,8 +967,8 @@ COMBO FAMILIAR------------------------------------------------------------------
     padding-right: 40px;
     margin-top: 30px;
     margin-bottom: 60px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 142px;
+    margin-right: 142px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -1030,6 +1049,15 @@ COMBO FAMILIAR------------------------------------------------------------------
     color: #fff;
     text-align: center;
 }
+
+@media (max-width: 780px) {
+    
+}
+
+@media (max-width: 480px) {
+    
+}
+
 /*
 COMBO GRILL------------------------------------------------------------------------------
 */
@@ -1039,7 +1067,7 @@ COMBO GRILL---------------------------------------------------------------------
     border-radius: 20px;
     padding: 20px 40px 20px 40px;
     /* Padding: top 20px, right 40px, bottom 20px, left 0 */
-    margin: 30px 100px 60px 100px;
+    margin: 30px 142px 60px 142px;
     /* Margin: top 30px, right 100px, bottom 60px, left 100px */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -1121,8 +1149,8 @@ INDIVUDUALES--------------------------------------------------------------------
     padding: 15px;
     margin-top: 30px;
     margin-bottom: 60px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 142px;
+    margin-right: 142px;
     text-align: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -1154,7 +1182,7 @@ INDIVUDUALES--------------------------------------------------------------------
 
 .opcion-individual h1 {
     color: #f9f9f9;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .individual-price {
@@ -1162,4 +1190,97 @@ INDIVUDUALES--------------------------------------------------------------------
     border-radius: 10px;
     color: hsl(0, 0%, 12%);
     padding: 5px 10px;
+}
+
+/*Pop up css*/
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* semi-transparent background */
+    display: none; /* Hidden by default */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+/* Popup content styles */
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    max-width: 90%;
+    position: relative;
+}
+
+/* Close button styles */
+.close-btn {
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: #34db3f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: #ab9713;
+}
+
+
+.image-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* semi-transparent background */
+    display: none; /* Hidden by default */
+    align-items: center;
+    justify-content: center;
+    z-index: 1001; /* Slightly higher z-index */
+}
+
+/* Image popup content styles */
+.image-popup-content {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    max-width: 90%; /* Limit popup content width */
+    max-height: 90%; /* Limit popup content height */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+}
+
+/* Image styling with max size */
+.image-popup-content img {
+    max-width: 100%;
+    max-height: 80vh; /* Limits image height to 80% of viewport height */
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Close button styles */
+.close-image-btn {
+    padding: 8px 15px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+}
+
+/* Disable scroll when popup is open */
+body.no-scroll {
+    overflow: hidden;
 }

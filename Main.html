@@ -26,10 +26,10 @@
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links">Contactanos</a>
+                    <a href="/" id="openPopup" class="navbar__links">Contactanos</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links">Encuentranos</a>
+                    <a href="/" id="openImagePopup" class="navbar__links">Encuentranos</a>
                 </li>
                 <li class="navbar__btn">
                     <a onclick="redirectToMenu('index')" class="button">MENU</a>
@@ -37,6 +37,20 @@
             </ul>
         </div>
     </nav>
+    <div id="popup" class="popup-overlay">
+        <div class="popup-content">
+            <p>Contactanos en:</p>
+            <p>pupusas_grill@yahoo.com</p>
+            <button class="close-btn" id="closePopup">Cerrar</button>
+        </div>
+    </div>
+    <div id="imagePopup" class="image-popup-overlay">
+        <div class="image-popup-content">
+            <img src="images/MAPWhite.png" alt="Popup Image"> <!-- Placeholder image, replace with your image -->
+            <button class="close-image-btn" id="closeImagePopup">Cerrar</button>
+        </div>
+    </div>
+
     <!--SECCIÓN PRINCIPAL-->
     <div class="main">
         <div class="main__container">
