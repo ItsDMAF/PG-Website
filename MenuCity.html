@@ -14,10 +14,10 @@
 </head>
 
 <body>
-    <!--NAVIGATION SECTION-->
+    <!--SECCIÓN NAVEGACION-->
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="/Main.html" id="navbar__logo"><i class="fa-solid fa-utensils"></i>P&G</a>
+            <a href="/" id="navbar__logo"><i class="fa-solid fa-utensils"></i>P&G</a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -25,24 +25,30 @@
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links">Home</a>
+                    <a href="/" id="openPopup" class="navbar__links">Contactanos</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/" class="navbar__links">Quienes Somos</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/" class="navbar__links">Encuentranos</a>
-                </li>
-                <li class="navbar__btn">
-                    <a onclick="redirectToMenu('Main')" class="button">MENU</a>
+                    <a href="/" id="openImagePopup" class="navbar__links">Encuentranos</a>
                 </li>
             </ul>
         </div>
     </nav>
-
+    <div id="popup" class="popup-overlay">
+        <div class="popup-content">
+            <p>Contactanos en:</p>
+            <p>pupusas_grill@yahoo.com</p>
+            <button class="close-btn" id="closePopup">Cerrar</button>
+        </div>
+    </div>
+    <div id="imagePopup" class="image-popup-overlay">
+        <div class="image-popup-content">
+            <img src="images/MAPWhite.png" alt="Popup Image"> <!-- Placeholder image, replace with your image -->
+            <button class="close-image-btn" id="closeImagePopup">Cerrar</button>
+        </div>
+    </div>
     <!-- Combos de 1 - 6 -->
     <div class="container__menu">
-        <h1>Combos</h1>
+        <h1>MENU</h1>
         <div class="menu-columns">
             <!-- Combo Items 1 to 6 -->
             <!--Combo 1-->
@@ -171,28 +177,28 @@
     <div class="menu-option-container">
         <div class="menu">
             <div class="menu-section pupusas-group">
-                <div class="menu-title pupusas">Pupusas</div>
+                <span class="menu-title pupusas">Pupusas</span>
                 <div class="menu-items">
-                    Chicharrón - Quesillo - Mixtas - Loroco<br>
-                    Pollo Con Quesillo - Rancheras - Revueltas
+                    Chicharrón - Quesillo - Mixtas <br>
+                    Loroco - Pollo Con Quesillo <br>
+                    Rancheras - Revueltas
                 </div>
             </div>
             <div class="menu-section tacos-group">
-                <div class="menu-title tacos">Tacos</div>
+                <span class="menu-title tacos">Tacos</span>
                 <div class="menu-items">Pollo</div>
             </div>
-            <div class="menu-section accompanied">
-                <span>Acompañado con:</span><br>
-                Repollo - Encurtido - Salsa
+            <div class="menu-section accompanied-group">
+                <span class="menu-title accompanied">Acompañado</span>
+                <div class="menu-items">Repollo - Encurtido - Salsa</div>
             </div>
         </div>
     </div>
-    
+            
     <!-- Combo Familiar-->
     <div class="combo-container1">
         <div class="combo-image1">
-            <!-- Replace the placeholder image with the actual pupusas image -->
-            <img src="images/ComboFam.png" alt="PupusasFamiliar">
+            <img src="images/ComboFam.png" alt="Pupusas Familiar">
         </div>
         <div class="combo-details1">
             <div class="combo-title1">COMBO FAMILIAR</div>
@@ -203,6 +209,7 @@
             <div class="combo-price1">L556</div>
         </div>
     </div>
+
     <!--Individuales-->
     <div class="container-individuales">
         <h1 class="menu-title">Individuales</h1>
@@ -253,13 +260,13 @@
     </div>
     <!--Combo Grill-->
     <div class="container2">
-        <h1>COMBO GRILL</h1> <!-- Title at the top -->
-        <div class="combo2">
-            <div class="combo-image2">
-                <img src="images/ComboGrill1.png" alt="ComGrill1">
-                <img src="images/ComboGrill2.png" alt="ComGrill2">
+        <h1>COMBO GRILL</h1>
+        <div class="content2">
+            <div class="images2">
+                <img src="images/ComboGrill1.png" alt="Combo Grill 1">
+                <img src="images/ComboGrill2.png" alt="Combo Grill 2">
             </div>
-            <div class="combo-options2">
+            <div class="options2">
                 <div class="option2">
                     <span class="number2">1</span>
                     <p>3 Pupusas + 1 Refresco</p>
@@ -298,7 +305,19 @@
             </div>
         </div>
     </div>
-    <script src="app.js"></script>
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/PupusasGrill/?locale=es_LA"><i class="fab fa-facebook-f" target="_blank"></i></a>
+            <a href="https://www.instagram.com/pupusasgrill/"><i class="fab fa-instagram" target="_blank"></i></a>
+            <a href="#"><i class="fab fa-x-twitter" target="_blank"></i></a>
+            <a href="#"><i class="fab fa-linkedin" target="_blank"></i></a>
+            <a href="#"><i class="fab fa-youtube" target="_blank"></i></a>
+        </div>
+        <div class="copyright">
+            <p>©P&G 2023. All rights reserved.</p>
+        </div>
+    </footer>
+        <script src="app.js"></script>
 </body>
 
 </html>

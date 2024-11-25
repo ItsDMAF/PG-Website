@@ -33,5 +33,5 @@ const openPopup = document.getElementById('openPopup');
 
         closeImagePopup.addEventListener('click', function () {
             imagePopup.style.display = 'none'; 
-            document.body.classList.remove('no-scroll');
+            document.body.classList.remove('no-scroll'); 
         });
