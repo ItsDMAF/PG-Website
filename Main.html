@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pupusas & Grill</title>
+    <link rel="icon" type="img/png" href="images/Famacon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/4bea47b769.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--SECCIÓN NAVEGACION-->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"><i class="fa-solid fa-utensils"></i>P&G</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a id="openPopup" class="navbar__links">Contactanos</a>
+                </li>
+                <li class="navbar__item">
+                    <a id="openImagePopup" class="navbar__links">Encuentranos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="popup" class="popup-overlay">
+        <div class="popup-content">
+            <p>Contactanos en:</p>
+            <p>pupusas_grill@yahoo.com</p>
+            <button class="close-btn" id="closePopup">Cerrar</button>
+        </div>
+    </div>
+    <div id="imagePopup" class="image-popup-overlay">
+        <div class="image-popup-content">
+            <img src="images/MAPWhite.png" alt="Popup Image">
+            <button class="close-image-btn" id="closeImagePopup">Cerrar</button>
+        </div>
+    </div>
+    <!--SECCIÓN PRINCIPAL-->
+    <div class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>PUPUSAS & GRILL</h1>
+                <h2>HONDURAS</h2>
+                <p>El auténtico sabor catracho HN</p>
+            </div>
+            <div class="main__img--container">
+                <img src="images/Logo.png" alt="pic" id="main__img">
+            </div>
+        </div>
+    </div>
+    <!--QUIENES SOMOS-->
+    <div class="quienes">
+        <h1>¿Quienes Somos?</h1>
+        <h2>Pupusas & Grill es un restaurante 100% Hondureño,
+            inicio operaciones en el año 2007 y se dedica a la
+            produccion y venta de pupusas, tacos, chuleta costeña
+            entre varias más.</h2>
+    </div>
+    <!--MENU DE LOCALIZACIONES-->
+    <div class="services">
+        <h1>LOS MENUS QUE OFRECEMOS</h1>
+        <div class="services__container">
+            <div class="services__card">
+                <h2>NOVACENTRO</h2>
+                <button onclick="location.href='MenuNovaCentro.html'">VER</button>
+            </div>
+            <div class="services__card">
+                <h2>GRANJA</h2>
+                <button onclick="location.href='MenuGranja.html'">VER</button>
+            </div>
+            <div class="services__card">
+                <h2>CATACAMAS</h2>
+                <button onclick="location.href='MenuCatacamas.html'">VER</button>
+            </div>
+            <div class="services__card">
+                <h2>CITY</h2>
+                <button onclick="location.href='MenuCity.html'">VER</button>
+            </div>
+            <div class="services__card">
+                <h2>PREMIER</h2>
+                <button onclick="location.href='MenuPremier.html'">VER</button>
+            </div>
+            <div class="services__card">
+                <h2>CENTRO</h2>
+                <button onclick="location.href='MenuCentro.html'">VER</button>
+            </div>
+            <div class="services__card">
+                <h2>JUTICALPA</h2>
+                <button onclick="location.href='MenuJuticalpa.html'">VER</button>
+            </div>
+            <div class="services__card">
+                <h2>CHOLUTECA</h2>
+                <button onclick="location.href='MenuCholuteca.html'">VER</button>
+            </div>
+            <div class="services__card">
+                <h2>MUY PRONTO...</h2>
+                <button>VER</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/PupusasGrill/?locale=es_LA"><i class="fab fa-facebook-f" target="_blank"></i></a>
+            <a href="https://www.instagram.com/pupusasgrill/"><i class="fab fa-instagram" target="_blank"></i></a>
+            <a href="#"><i class="fab fa-x-twitter" target="_blank"></i></a>
+            <a href="#"><i class="fab fa-linkedin" target="_blank"></i></a>
+            <a href="#"><i class="fab fa-youtube" target="_blank"></i></a>
+        </div>
+        <div class="copyright">
+            <p>©P&G 2023. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
