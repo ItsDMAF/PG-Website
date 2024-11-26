@@ -11,252 +11,312 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!--NAVIGATION SECTION-->
-    <nav class="navbar">
-        <div class="navbar__container">
-            <a href="/" id="navbar__logo"><i class="fa-solid fa-utensils"></i>P&G</a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="/" class="navbar__links">Home</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/" class="navbar__links">Quienes Somos</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="/" class="navbar__links">Encuentranos</a>
-                </li>
-                <li class="navbar__btn">
-                    <a onclick="redirectToMenu('Main')" class="button">MENU</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!--Menu de novacentro en general-->   
-<body>
-    <div class="container__menu">
-      <h1>Menu Novacentro</h1>
-      <!--Combos-->
-      <h2>Combos</h2>
-      <div class="menu-item">
-        <img src="images/combo1.jpg" alt="Combo 1 Photo">
-        <div class="menu-item-content">
-          <h3>Combo #1</h3>
-          <p class="price">L. 128</p>
-          <p>Description of Combo 1</p>
-        </div>
+  <!--SECCIÓN NAVEGACION-->
+  <nav class="navbar">
+      <div class="navbar__container">
+          <a href="/" id="navbar__logo"><i class="fa-solid fa-utensils"></i>P&G</a>
+          <div class="navbar__toggle" id="mobile-menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+          <ul class="navbar__menu">
+              <li class="navbar__item">
+                  <a id="openPopup" class="navbar__links">Contactanos</a>
+              </li>
+              <li class="navbar__item">
+                  <a id="openImagePopup" class="navbar__links">Encuentranos</a>
+              </li>
+          </ul>
       </div>
-  
-      <div class="menu-item">
-        <img src="images/combo2.jpg" alt="Combo 2 Photo">
-        <div class="menu-item-content">
-          <h3>Combo #2</h3>
-          <p class="price">L. 95</p>
-          <p>Description of Combo 2.</p>
-        </div>
+  </nav>
+  <div id="popup" class="popup-overlay">
+      <div class="popup-content">
+          <p>Contactanos en:</p>
+          <p>pupusas_grill@yahoo.com</p>
+          <button class="close-btn" id="closePopup">Cerrar</button>
       </div>
+  </div>
+  <div id="imagePopup" class="image-popup-overlay">
+      <div class="image-popup-content">
+          <img src="images/MAPWhite.png" alt="Popup Image"> 
+          <button class="close-image-btn" id="closeImagePopup">Cerrar</button>
+      </div>
+  </div>
+  <!-- Combos de 1 - 6 -->
+  <div class="container__menu">
+      <h1>MENU NOVACENTRO</h1>
+      <div class="menu-columns">
+          <!-- Combo 1 to 6 -->
+          <!--Combo 1-->
+          <div class="menu-container">
+              <div class="header">
+                  <div class="combo-title">
+                      <span>COMBO</span>
+                      <div class="combo-number">1</div>
+                  </div>
+              </div>
+              <div class="content">
+                  <div class="image-section">
+                      <img src="images/Combo1.png" alt="Combo1" class="combo-image">
+                  </div>
+                  <div class="combo-items">
+                      <div class="combo-item">
+                          <div class="combo-description">3 Pupusas + Refresco</div>
+                          <div class="combo-price">L128</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!--Combo 2-->
+          <div class="menu-container">
+              <div class="header">
+                  <div class="combo-title">
+                      <span>COMBO</span>
+                      <div class="combo-number">2</div>
+                  </div>
+              </div>
+              <div class="content">
+                  <div class="image-section">
+                      <img src="images/Combo2.png" alt="Combo1" class="combo-image">
+                  </div>
+                  <div class="combo-items">
+                      <div class="combo-item">
+                          <div class="combo-description">2 Pupusas + Refresco</div>
+                          <div class="combo-price">L95</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!--Combo 3-->
+          <div class="menu-container">
+              <div class="header">
+                  <div class="combo-title">
+                      <span>COMBO</span>
+                      <div class="combo-number">3</div>
+                  </div>
+              </div>
+              <div class="content">
+                  <div class="image-section">
+                      <img src="images/Combo3.png" alt="Combo1" class="combo-image">
+                  </div>
+                  <div class="combo-items">
+                      <div class="combo-item">
+                          <div class="combo-description">2 Pupusas + 1 Taco + Refresco</div>
+                          <div class="combo-price">L140</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!--Combo 4-->
+          <div class="menu-container">
+              <div class="header">
+                  <div class="combo-title">
+                      <span>COMBO</span>
+                      <div class="combo-number">4</div>
+                  </div>
+              </div>
+              <div class="content">
+                  <div class="image-section">
+                      <img src="images/Combo4.png" alt="Combo1" class="combo-image">
+                  </div>
+                  <div class="combo-items">
+                      <div class="combo-item">
+                          <div class="combo-description">1 Orden de Tacos + Refresco</div>
+                          <div class="combo-price">L119</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!--Combo 5-->
+          <div class="menu-container">
+              <div class="header">
+                  <div class="combo-title">
+                      <span>COMBO</span>
+                      <div class="combo-number">5</div>
+                  </div>
+              </div>
+              <div class="content">
+                  <div class="image-section">
+                      <img src="images/Combo5.png" alt="Combo1" class="combo-image">
+                  </div>
+                  <div class="combo-items">
+                      <div class="combo-item">
+                          <div class="combo-description">1 Pupusas + 1 Taco + Refresco</div>
+                          <div class="combo-price">L107</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!--Combo 6-->
+          <div class="menu-container">
+              <div class="header">
+                  <div class="combo-title">
+                      <span>COMBO</span>
+                      <div class="combo-number">6</div>
+                  </div>
+              </div>
+              <div class="content">
+                  <div class="image-section">
+                      <img src="images/Combo6.png" alt="Combo1" class="combo-image">
+                  </div>
+                  <div class="combo-items">
+                      <div class="combo-item">
+                          <div class="combo-description">6 Pupusas + 2 Refresco</div>
+                          <div class="combo-price">L256</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!--Opcion de pupusas tacos y acompallamientos-->
+  <div class="menu-option-container">
+      <div class="menu">
+          <div class="menu-section pupusas-group">
+              <span class="menu-title pupusas">Pupusas</span>
+              <div class="menu-items">
+                  Chicharrón - Quesillo - Mixtas <br>
+                  Loroco - Pollo Con Quesillo <br>
+                  Rancheras - Revueltas
+              </div>
+          </div>
+          <div class="menu-section tacos-group">
+              <span class="menu-title tacos">Tacos</span>
+              <div class="menu-items">Pollo</div>
+          </div>
+          <div class="menu-section accompanied-group">
+              <span class="menu-title accompanied">Acompañado</span>
+              <div class="menu-items">Repollo - Encurtido - Salsa</div>
+          </div>
+      </div>
+  </div>
+          
+  <!-- Combo Familiar-->
+  <div class="combo-container1">
+      <div class="combo-image1">
+          <img src="images/ComboFam.png" alt="Pupusas Familiar">
+      </div>
+      <div class="combo-details1">
+          <div class="combo-title1">COMBO FAMILIAR</div>
+          <div class="combo-description1">
+              <span class="item1">12 Pupusas</span>
+              <span class="item1">4 Refrescos</span>
+          </div>
+          <div class="combo-price1">L556</div>
+      </div>
+  </div>
 
-      <div class="menu-item">
-        <img src="images/combo3.jpg" alt="Combo 3 Photo">
-        <div class="menu-item-content">
-          <h3>Combo #3</h3>
-          <p class="price">L. 140</p>
-          <p>Description of Combo 3.</p>
-        </div>
+  <!--Individuales-->
+  <div class="container-individuales">
+      <h1 class="menu-title">Individuales</h1>
+      <div class="items-row">
+          <div class="opcion-individual">
+              <h1>Pupusas</h1>
+              <div class="individual-price">
+                  <h2>L33</h2>
+              </div>
+          </div>
+          <div class="opcion-individual">
+              <h1>Taco</h1>
+              <div class="individual-price">
+                  <h2>L45</h2>
+              </div>
+          </div>
+          <div class="opcion-individual">
+              <h1>Chuleta</h1>
+              <div class="individual-price">
+                  <h2>L135</h2>
+              </div>
+          </div>
+          <div class="opcion-individual">
+              <h1>Filete</h1>
+              <div class="individual-price">
+                  <h2>L135</h2>
+              </div>
+          </div>
+          <div class="opcion-individual">
+              <h1>Carnitas</h1>
+              <div class="individual-price">
+                  <h2>L135</h2>
+              </div>
+          </div>
+          <div class="opcion-individual">
+              <h1>Tajadas</h1>
+              <div class="individual-price">
+                  <h2>L54</h2>
+              </div>
+          </div>
+          <div class="opcion-individual">
+              <h1>Refresco</h1>
+              <div class="individual-price">
+                  <h2>L29</h2>
+              </div>
+          </div>
       </div>
-
-      <div class="menu-item">
-        <img src="images/combo4.jpg" alt="Combo 4 Photo">
-        <div class="menu-item-content">
-          <h3>Combo #4</h3>
-          <p class="price">L. 119</p>
-          <p>Description of Combo 4.</p>
-        </div>
+  </div>
+  <!--Combo Grill-->
+  <div class="container2">
+      <h1>COMBO GRILL</h1>
+      <div class="content2">
+          <div class="images2">
+              <img src="images/ComboGrill1.png" alt="Combo Grill 1">
+              <img src="images/ComboGrill2.png" alt="Combo Grill 2">
+          </div>
+          <div class="options2">
+              <div class="option2">
+                  <span class="number2">1</span>
+                  <p>Chuleta Consteña + Tajaditas</p>
+                  <div class="price2">L163</div>
+              </div>
+              <div class="option2">
+                  <span class="number2">2</span>
+                  <p>Carnita Consteña + Tajaditas</p>
+                  <div class="price2">L163</div>
+              </div>
+              <div class="option2">
+                  <span class="number2">3</span>
+                  <p>Filete de Pollo Costeño + Tajaditas</p>
+                  <div class="price2">L163</div>
+              </div>
+              <div class="option2">
+                  <span class="number2">4</span>
+                  <p>1 Orden de Tajadas</p>
+                  <div class="price2">L83</div>
+              </div>
+              <div class="option2">
+                  <span class="number2">5</span>
+                  <p>Chuleta Tipica + Frijoles</p>
+                  <div class="price2">L163</div>
+              </div>
+              <div class="option2">
+                  <span class="number2">6</span>
+                  <p>Carnitas Tipica + Frijoles</p>
+                  <div class="price2">L163</div>
+              </div>
+              <div class="option2">
+                  <span class="number2">7</span>
+                  <p>Filete de Pollo Tipico + Frijoles</p>
+                  <div class="price2">L163</div>
+              </div>
+          </div>
       </div>
-
-      <div class="menu-item">
-        <img src="images/combo5.jpg" alt="Combo 5 Photo">
-        <div class="menu-item-content">
-          <h3>Combo #5</h3>
-          <p class="price">L. 107</p>
-          <p>Description of Combo 5.</p>
-        </div>
+  </div>
+  <!--Footer-->
+  <footer>
+      <div class="social-icons">
+          <a href="https://www.facebook.com/PupusasGrill/?locale=es_LA"><i class="fab fa-facebook-f" target="_blank"></i></a>
+          <a href="https://www.instagram.com/pupusasgrill/"><i class="fab fa-instagram" target="_blank"></i></a>
+          <a href="#"><i class="fab fa-x-twitter" target="_blank"></i></a>
+          <a href="#"><i class="fab fa-linkedin" target="_blank"></i></a>
+          <a href="#"><i class="fab fa-youtube" target="_blank"></i></a>
       </div>
-
-      <div class="menu-item">
-        <img src="images/combo6.jpg" alt="Combo 6 Photo">
-        <div class="menu-item-content">
-          <h3>Combo #6</h3>
-          <p class="price">L. 256</p>
-          <p>Description of Combo 6.</p>
-        </div>
+      <div class="copyright">
+          <p>©P&G 2023. All rights reserved.</p>
       </div>
-
-      <div class="menu-item">
-        <img src="images/combo7.jpg" alt="Combo 7 Photo">
-        <div class="menu-item-content">
-          <h3>Combo #7</h3>
-          <p class="price">L. 163</p>
-          <p>Description of Combo 7.</p>
-        </div>
-      </div>
-
-      <div class="menu-item">
-        <img src="images/combo8.jpg" alt="Combo 8 Photo">
-        <div class="menu-item-content">
-          <h3>Combo #8</h3>
-          <p class="price">L. 163</p>
-          <p>Description of Combo 8.</p>
-        </div>
-      </div>
-
-      <div class="menu-item">
-        <img src="images/combo9.jpg" alt="Combo 9 Photo">
-        <div class="menu-item-content">
-          <h3>Combo #9</h3>
-          <p class="price">L. 163</p>
-          <p>Description of Combo 9.</p>
-        </div>
-      </div>
-
-      <div class="menu-item">
-        <img src="images/combo10.jpg" alt="Combo 10 Photo">
-        <div class="menu-item-content">
-          <h3>Combo #10</h3>
-          <p class="price">L. 83</p>
-          <p>Description of Combo 10.</p>
-        </div>
-      </div>
-
-      <div class="menu-item">
-        <img src="images/combofam.jpg" alt="Combo fam Photo">
-        <div class="menu-item-content">
-          <h3>Combo Familiar</h3>
-          <p class="price">L. 512</p>
-          <p>Description of Combo Familiar.</p>
-        </div>
-      </div>
-      <!--Individuales-->
-      <h2>Individuales</h2>
-      <div class="menu-item">
-        <img src="images/pupusas.jpg" alt="pupusas Photo">
-        <div class="menu-item-content">
-          <h3>Pupusas Individuales</h3>
-          <p class="price">L. 33</p>
-          <p>Description of Pupusas.</p>
-        </div>
-      </div>
-  
-      <div class="menu-item">
-        <img src="images/taco.jpg" alt="taco Photo">
-        <div class="menu-item-content">
-          <h3>Taco Individuales</h3>
-          <p class="price">L. 45</p>
-          <p>Description of Tacos.</p>
-        </div>
-      </div>
-      <!--Otros-->
-      <h2>Otros</h2>
-      <div class="menu-item">
-        <img src="images/carne.jpg" alt="carne Photo">
-        <div class="menu-item-content">
-          <h3>Carnes</h3>
-          <p class="price">L. 135</p>
-          <p>Description of Carnes.</p>
-        </div>
-      </div>
-
-      <div class="menu-item">
-        <img src="images/tajada.jpg" alt="tajadas Photo">
-        <div class="menu-item-content">
-          <h3>Tajadas</h3>
-          <p class="price">L. 54</p>
-          <p>Description of Tajadas.</p>
-        </div>
-      </div>
-      <!--Refrescos-->
-      <h2>Refrescos</h2>
-      <div class="menu-item">
-        <img src="images/refresco.jpg" alt="refresco Photo">
-        <div class="menu-item-content">
-          <h3>Refresco</h3>
-          <p class="price">L. 29</p>
-          <p>Description of Refresco.</p>
-        </div>
-      </div>
-    </div>
-  </body>
-    <!--footer-->
-    <div class="footer__container">
-        <div class="footer__links">
-            <div class="footer__link--wrapper">
-                <div class="footer__link--items">
-                   <h2>About Us</h2>
-                   <a href="/">How it works</a> 
-                   <a href="/">Testimonians</a> 
-                   <a href="/">carrears</a> 
-                   <a href="/">investments</a> 
-                   <a href="/">term of service</a> 
-                </div>
-                <div class="footer__link--items">
-                    <h2>About Us</h2>
-                    <a href="/">How it works</a> 
-                    <a href="/">Testimonians</a> 
-                    <a href="/">carrears</a> 
-                    <a href="/">investments</a> 
-                    <a href="/">term of service</a> 
-                 </div>
-                <div class="footer__link--items">
-                   <h2>About Us</h2>
-                   <a href="/">How it works</a> 
-                   <a href="/">Testimonians</a> 
-                   <a href="/">carrears</a> 
-                   <a href="/">investments</a> 
-                   <a href="/">term of service</a> 
-                </div>
-                <div class="footer__link--items">
-                    <h2>About Us</h2>
-                    <a href="/">How it works</a> 
-                    <a href="/">Testimonians</a> 
-                    <a href="/">carrears</a> 
-                    <a href="/">investments</a> 
-                    <a href="/">term of service</a> 
-                 </div>
-            </div>
-        </div>
-        <div class="social__media">
-            <div class="social__media--wrap">
-                <div class="footer__logo">
-                    <a href="/" id="footer__logo"><i class="fa-solid fa-utensils"></i>P&G</a>
-                </div>
-                <p class="website__right">© P&G 2023. All rights reserved</p>
-                <div class="social__icons">
-                    <a href="https://www.facebook.com/PupusasGrill/?locale=es_LA" class="social__icon--link" target="_blank">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/pupusasgrill/" class="social__icon--link" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="/" class="social__icon--link" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="/" class="social__icon--link" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="/" class="social__icon--link" target="_blank">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <script src="app.js"></script>
+  </footer>
+      <script src="app.js"></script>
 </body>
 </html>
